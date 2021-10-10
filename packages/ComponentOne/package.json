@@ -1,0 +1,29 @@
+{
+  "name": "@seabedui/componentone",
+  "version": "0.0.1",
+  
+  "author": "Utkarsh Kumar <utkarshk384@gmail.com>",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "exports": {
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/esm/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  
+  "scripts": {
+    "build": "run-p build:*",
+    "build:module": "yarn rollup -c=../../rollup.config.ts --environment INCLUDE_DEPS,BUILD:production",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types"
+  },
+  "dependencies": {
+    "@linaria/core": "^3.0.0-beta.4",
+    "@linaria/react": "^3.0.0-beta.13"
+  }
+
+}

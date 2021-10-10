@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom.iterable", "es2016", "dom"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "paths": {
+      "@/seabedui/button/*": ["./packages/button/dist/*"],
+      "@seabedui/core/*": ["./packages/core/dist/*"],
+      "@seabedui/hooks/*": ["./packages/hooks/dist/*"],
+      "@seabedui/theme/*": ["./packages/theme/dist/*"],
+      "@seabedui/types/*": ["./packages/types/dist/*"],
+      "@seabedui/utils/*": ["./packages/utils/dist/*"],
+    }
+  },
+  "include": [".storybook/*.tsx", "packages", "test-utils"],
+  "exclude": ["rollup.config.ts"]
+}
