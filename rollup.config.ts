@@ -81,7 +81,7 @@ const plugins = [
 	typescript({ tsconfig: "./tsconfig.json" }),
 	nodeResolve({
 		mainFields: ["module", "main"],
-		dedupe: ["@seabedui/core"],
+		dedupe: ["@ui/core"],
 		exportConditions: ["require", "node"],
 		moduleDirectories: ["node_modules", "../**"],
 		extensions,

@@ -1,5 +1,5 @@
 import { styled } from "@linaria/react"
-import {Text} from "@seabedui/componentone"
+import {Text} from "@ui/componentone"
 
 
 

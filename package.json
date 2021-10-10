@@ -1,8 +1,6 @@
 {
-  "name": "seabed-ui",
+  "name": "components",
   "version": "0.0.1",
-  "description": "A simple component library made using Build time CSS-in-JS(linaria) library for best developer experience and user experience",
-  "repository": "https://github.com/Utkarsh-Kumar384/Seabed-UI",
   "author": "Utkarsh Kumar <utkarshk384@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -84,14 +82,5 @@
   },
   "devDependencies": {
     "husky": "^7.0.2"
-  },
-  "lint-staged": {
-    "packages/**/*.ts(x)?": [
-      "yarn lint",
-      "yarn build"
-    ]
-  },
-  "husky": {
-    "pre-commit": "yarn lint"
   }
 }
